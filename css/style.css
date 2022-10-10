@@ -1,0 +1,28 @@
+body {
+    background-color: #008b8b;
+    color: white;
+    font-weight: 600;
+}
+h1 {
+    color:#5114DE;
+    font-size: 48px;
+}
+.square {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5114DE;
+}
+.fizz_buzz {
+    color: #F52D22;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.just_fizz {
+    color: #F57022;
+}
+.just_buzz {
+    color: #FAD12A;
+}
