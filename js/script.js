@@ -12,7 +12,7 @@ for (let i = 1; i < 101; i++){
     let mioDiv = document.createElement('div');
     mioDiv.className = 'square';
     mioDiv.append(i);
-
+    
 // Controllo il flusso con un condizionale 'if'... se 'i' è divisibile per 3 appare Fizz, se è divisibile per 5 appare Buzz, se è divisibile per entrambi appare FizzBuzz
     if (i % 5 == 0 && i % 3 == 0){
         mioDiv.innerHTML = `FizzBuzz`;
@@ -27,7 +27,11 @@ for (let i = 1; i < 101; i++){
     } else {
         mioDiv.innerHTML = `${i}`;
     }
-
+    
+    // Aggiunto background alternato nei quadratini pari 
+    if(i % 2 == 0){
+        mioDiv.classList.add('alt_square');
+    }
     // uso 'append' per inserire il div creato nel div.wrapper
     myWrap.append(mioDiv);
 }
